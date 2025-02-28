@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Table</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <style>
+    body {
+      margin: 20px 10px 0;
+      padding: 0;
+    }
+    table {
+      margin: auto;
+      width: 100%;
+      height: 100%;
+      border-collapse: collapse;
+    }
+    /* Social links styles */
+    .social-links {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+    /* Slide-In animation for the #SHATRUGHAN element */
+    #SHATRUGHAN {
+      font-family: Arial, sans-serif;
+      font-size: 1.5rem;
+      color: #e74c3c;
+      padding: 10px;
+      text-align: center;
+      position: relative;
+      animation: slideIn 2s ease-out forwards;
+      opacity: 0; /* Initially hidden */
+      width: 50%;
+      margin: auto;
+    }
+    p {
+      text-align: center;
+    }
+    @keyframes slideIn {
+      0% {
+        transform: translateX(-100%);
+        opacity: 0;
+      }
+      100% {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <table border="1">
+    <thead>
+      <tr>
+        <th>
+          <figure>
+            <img src="template/images.jpeg" alt="Nature Image" width="200" />
+            <figcaption>Nature</figcaption>
+          </figure>
+        </th>
+        <th id="SHATRUGHAN" width="350">SHATRUGHAN</th>
+        <th>
+          <figure>
+            <img src="template/pic.jpg" alt="My Image" width="100" />
+            <figcaption>My Image</figcaption>
+          </figure>
+        </th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <!-- Left Column with Links -->
+        <th style="vertical-align: top">
+          <ul>
+            <li><p><a href="objective.html" target="portfolio-frame" style="text-decoration: none">Objective</a></p></li>
+            <li><p><a href="education.html" target="portfolio-frame" style="text-decoration: none">Education</a></p></li>
+            <li><p><a href="certificate.html" target="portfolio-frame" style="text-decoration: none">Certificate</a></p></li>
+            <li><p><a href="contact.html" target="portfolio-frame" style="text-decoration: none">Contact</a></p></li>
+            <li><p><a href="gallery.html" target="portfolio-frame" style="text-decoration: none">Gallery</a></p></li>
+          </ul>
+          <ol>
+            <li><p><a href="music.html" target="portfolio-frame" style="text-decoration: none">Music</a></p></li>
+            <li><p><a href="videos.html" target="portfolio-frame" style="text-decoration: none">Videos</a></p></li>
+            <li><p><a href="hobbies.html" target="portfolio-frame" style="text-decoration: none">Hobbies</a></p></li>
+            <li><p><a href="strength.html" target="portfolio-frame" style="text-decoration: none">Strength</a></p></li>
+            <li><p><a href="weakness.html" target="portfolio-frame" style="text-decoration: none">Weakness</a></p></li>
+            <li><p><a href="address.html" target="portfolio-frame" style="text-decoration: none">Address</a></p></li>
+            <li><a href="https://sites.google.com/view/materialstudy/home">My Website</a></li>
+          </ol>
+        </th>
+
+        <!-- Portfolio Display Area -->
+        <th colspan="2">
+          <iframe name="portfolio-frame" src="" width="800" height="400" style="background-color: #80d6db7b;"></iframe>
+        </th>
+      </tr>
+    </tbody>
+
+    <tfoot>
+      <tr>
+        <th colspan="3">Address: Mewar University, Gangrar, Chittorgarh</th>
+      </tr>
+      <tr>
+        <th colspan="3">
+          <div class="social-links">
+            <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/shatrughan-kumar-6017352a2" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+          </div>
+        </th>
+      </tr>
+    </tfoot>
+  </table>
+  <p>&copy;2025: Certified by the Indian Government of Research and Development</p>
+  <a href="https://www.w3schools.com">Visit W3Schools</a>
+</body>
+</html>
